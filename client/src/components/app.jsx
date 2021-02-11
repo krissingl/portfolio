@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './home.jsx';
-import classes from '../css/styles.css';
+import classes1 from '../css/styles_bidnez.css';
+import classes2 from '../css/styles_funtimez.css';
 
 class App extends React.Component {
   constructor() {
@@ -13,7 +14,12 @@ class App extends React.Component {
 
   render() {
     let currentPage;
-    const currentStyle = classes[this.state.portfolioStyle];
+    let currentClasses;
+    if (this.state.portfolioStyle === 'bidnez') {
+      currentClasses = classes1;
+    } else if (this.state.portfolioStyle === 'funtimez') {
+      currentClasses = classes2;
+    }
     if (this.state.page === 'home') {
       currentPage = (
         <div>
@@ -22,8 +28,8 @@ class App extends React.Component {
       );
     }
     return (
-      <div className={currentStyle}>
-        <h2>Portfolio App</h2>
+      <div>
+        <h2 className={currentClasses.titleTest}>Portfolio App</h2>
         <button type="button">Toggle Style</button>
         <div>
           {currentPage}
