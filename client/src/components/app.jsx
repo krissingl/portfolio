@@ -24,9 +24,12 @@ class App extends React.Component {
   render() {
     let currentPage;
     let currentClasses;
+    let oppositeStyle;
     if (this.state.portfolioStyle === 'bidnez') {
+      oppositeStyle = 'Fun Timez';
       currentClasses = classes1;
     } else if (this.state.portfolioStyle === 'funtimez') {
+      oppositeStyle = 'Strictly Business';
       currentClasses = classes2;
     }
     if (this.state.page === 'home') {
@@ -39,7 +42,7 @@ class App extends React.Component {
     return (
       <div>
         <h2 className={currentClasses.titleTest}>Portfolio App</h2>
-        <button type="button">Toggle Style</button>
+        <button type="button" onClick={this.toggleStyle}>{oppositeStyle}</button>
         <div>
           {currentPage}
         </div>
