@@ -21,6 +21,7 @@ class App extends React.Component {
     return (
       <div>
         <h2>Portfolio App</h2>
+        <button type="button">Toggle Style</button>
         <div>
           {currentPage}
         </div>
