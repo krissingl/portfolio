@@ -10,6 +10,15 @@ class App extends React.Component {
       page: 'home',
       portfolioStyle: 'bidnez',
     };
+    this.toggleStyle = this.toggleStyle.bind(this);
+  }
+
+  toggleStyle() {
+    if (this.state.portfolioStyle === 'bidnez') {
+      this.setState({ portfolioStyle: 'funtimez' });
+    } else {
+      this.setState({ portfolioStyle: 'bidnez' });
+    }
   }
 
   render() {
