@@ -41,8 +41,7 @@ class App extends React.Component {
       );
     }
     return (
-      <div>
-        <h2 className={currentClasses.titleTest}>Portfolio App</h2>
+      <div className={currentClasses.main}>
         <button type="button" onClick={this.toggleStyle}>{oppositeStyle}</button>
         <TopBar />
         <div>
