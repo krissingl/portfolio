@@ -27,10 +27,10 @@ class App extends React.Component {
     let currentClasses;
     let oppositeStyle;
     if (this.state.portfolioStyle === 'bidnez') {
-      oppositeStyle = 'Fun Timez';
+      oppositeStyle = 'Change to Fun Timez style';
       currentClasses = classes1;
     } else if (this.state.portfolioStyle === 'funtimez') {
-      oppositeStyle = 'Strictly Business';
+      oppositeStyle = 'Change to Strictly Business style';
       currentClasses = classes2;
     }
     if (this.state.page === 'home') {
