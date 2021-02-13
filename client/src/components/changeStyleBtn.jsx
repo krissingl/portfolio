@@ -4,16 +4,14 @@ import { connect } from 'react-redux';
 const ChangeStyle = ({ portfolioStyle }) => {
   console.log('Change style of app');
   let oppositeStyle;
-  if (this.state.portfolioStyle === 'bidnez') {
+  if (portfolioStyle === 'bidnez') {
     oppositeStyle = 'Change to Fun Timez style';
-    currentClasses = classes1;
-  } else if (this.state.portfolioStyle === 'funtimez') {
+  } else if (portfolioStyle === 'funtimez') {
     oppositeStyle = 'Change to Strictly Business style';
-    currentClasses = classes2;
   }
   return (
     <div>
-      <button type="button">Change Style</button>
+      <button type="button">{oppositeStyle}</button>
     </div>
   );
 };
