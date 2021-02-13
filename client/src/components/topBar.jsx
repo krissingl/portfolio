@@ -5,7 +5,7 @@ const TopBar = () => {
   return (
     <div>
       <h1>Portfolio App</h1>
-      <h5>TooBar Component</h5>
+      <h5>TopBar Component</h5>
     </div>
   );
 };

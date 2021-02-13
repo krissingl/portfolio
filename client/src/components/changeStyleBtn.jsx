@@ -1,17 +1,27 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const ChangeStyle = ({ portfolioStyle }) => {
-  console.log('Change style of app');
+const ChangeStyle = ({ portfolioStyle, dispatch }) => {
   let oppositeStyle;
+  let oppositeStyleMsg;
   if (portfolioStyle === 'bidnez') {
-    oppositeStyle = 'Change to Fun Timez style';
+    oppositeStyle = 'funTimez';
+    oppositeStyleMsg = 'Change to Fun Timez style';
   } else if (portfolioStyle === 'funtimez') {
-    oppositeStyle = 'Change to Strictly Business style';
+    oppositeStyle = 'bidnez';
+    oppositeStyleMsg = 'Change to Strictly Business style';
   }
+
+  const toggleStyle = () => {
+    dispatch({
+      type: 'changeStyle',
+      payload: oppositeStyle,
+    });
+  };
+
   return (
     <div>
-      <button type="button">{oppositeStyle}</button>
+      <button type="button" onClick={toggleStyle}>{oppositeStyleMsg}</button>
     </div>
   );
 };
