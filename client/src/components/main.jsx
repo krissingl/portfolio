@@ -33,4 +33,16 @@ const Main = ({ page, portfolioStyle, dispatch }) => {
   );
 };
 
-export default Main;
+const mapStateToProps = (state) => ({
+  portfolioStyle: state.portfolioStyle,
+  page: state.page,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  dispatch,
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Main);
