@@ -44,6 +44,7 @@ class App extends React.Component {
       <div>
         <h2 className={currentClasses.titleTest}>Portfolio App</h2>
         <button type="button" onClick={this.toggleStyle}>{oppositeStyle}</button>
+        <TopBar />
         <div>
           {currentPage}
         </div>
