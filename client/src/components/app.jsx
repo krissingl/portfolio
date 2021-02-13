@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './home.jsx';
+import ChangeStyle from './changeStyleBtn.jsx';
 import TopBar from './topBar.jsx';
 import classes1 from '../css/styles_bidnez.css';
 import classes2 from '../css/styles_funtimez.css';
