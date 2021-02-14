@@ -11,7 +11,6 @@ const ChangeStyle = ({ portfolioStyle, dispatch }) => {
     oppositeStyle = 'bidnez';
     oppositeStyleMsg = 'Change to Strictly Business style';
   }
-
   const toggleStyle = () => {
     dispatch({
       type: 'changeStyle',
@@ -19,9 +18,10 @@ const ChangeStyle = ({ portfolioStyle, dispatch }) => {
     });
   };
 
+  console.log(`Opposite Style: ${oppositeStyle}`);
   return (
     <div>
-      <button type="button" onClick={toggleStyle}>{oppositeStyleMsg}</button>
+      <button type="button" onClick={() => { toggleStyle(); }}>{oppositeStyleMsg}</button>
     </div>
   );
 };

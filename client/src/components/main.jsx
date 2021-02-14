@@ -6,7 +6,7 @@ import TopBar from './topBar.jsx';
 import classes1 from '../css/styles_bidnez.css';
 import classes2 from '../css/styles_funtimez.css';
 
-const Main = ({ page, portfolioStyle, dispatch }) => {
+const Main = ({ page, portfolioStyle }) => {
   let currentClasses;
   if (portfolioStyle === 'bidnez') {
     currentClasses = classes1;
