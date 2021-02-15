@@ -11,6 +11,7 @@ const ChangeStyle = ({ portfolioStyle, dispatch }) => {
     oppositeStyle = 'bidnez';
     oppositeStyleMsg = 'Change to Strictly Business style';
   }
+  console.log(`Trying to find the Portfolio Style: ${portfolioStyle}`);
   const toggleStyle = () => {
     dispatch({
       type: 'changeStyle',
