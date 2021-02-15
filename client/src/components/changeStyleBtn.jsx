@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const ChangeStyle = ({ portfolioStyle, dispatch }) => {
-  let oppositeStyle;
-  let oppositeStyleMsg;
+  // let oppositeStyle;
+  // let oppositeStyleMsg;
   if (portfolioStyle === 'bidnez') {
     oppositeStyle = 'funTimez';
     oppositeStyleMsg = 'Change to Fun Timez style';
@@ -11,6 +11,7 @@ const ChangeStyle = ({ portfolioStyle, dispatch }) => {
     oppositeStyle = 'bidnez';
     oppositeStyleMsg = 'Change to Strictly Business style';
   }
+  console.log(`Trying to find the Portfolio Style: ${portfolioStyle}`);
   const toggleStyle = () => {
     dispatch({
       type: 'changeStyle',
