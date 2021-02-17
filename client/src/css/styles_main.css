@@ -1,0 +1,14 @@
+.topBarBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.navBoxIcons {
+  margin-right: 5px;
+  margin-left: 5px;
+}

@@ -10,7 +10,7 @@ const Main = ({ page, portfolioStyle }) => {
   let currentClasses;
   if (portfolioStyle === 'bidnez') {
     currentClasses = classes1;
-  } else if (portfolioStyle === 'funtimez') {
+  } else if (portfolioStyle === 'funTimez') {
     currentClasses = classes2;
   }
 

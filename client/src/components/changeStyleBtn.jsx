@@ -7,22 +7,20 @@ const ChangeStyle = ({ portfolioStyle, dispatch }) => {
   if (portfolioStyle === 'bidnez') {
     oppositeStyle = 'funTimez';
     oppositeStyleMsg = 'Change to Fun Timez style';
-  } else if (portfolioStyle === 'funtimez') {
+  } else if (portfolioStyle === 'funTimez') {
     oppositeStyle = 'bidnez';
     oppositeStyleMsg = 'Change to Strictly Business style';
   }
-  console.log(`Trying to find the Portfolio Style: ${portfolioStyle}`);
-  const toggleStyle = () => {
+  const toggleStyle = (newStyle) => {
     dispatch({
       type: 'changeStyle',
-      payload: oppositeStyle,
+      payload: newStyle,
     });
   };
 
-  console.log(`Opposite Style: ${oppositeStyle}`);
   return (
     <div>
-      <button type="button" onClick={() => { toggleStyle(); }}>{oppositeStyleMsg}</button>
+      <button type="button" onClick={() => { toggleStyle(oppositeStyle); }}>{oppositeStyleMsg}</button>
     </div>
   );
 };
