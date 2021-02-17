@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Home = () => (
+const PicturePage = () => (
   <div>
     <h1>Welcome to the picture page!</h1>
   </div>
 );
 
-export default Home;
+export default PicturePage;
