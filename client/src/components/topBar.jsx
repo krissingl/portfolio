@@ -6,7 +6,7 @@ const TopBar = () => {
   return (
     <div className={classesMain.topBarBox}>
       <h1>Portfolio App</h1>
-      <div>
+      <div className={classesMain.navBox}>
         <h5>icon1</h5>
         <h5>icon2</h5>
         <h5>icon3</h5>
