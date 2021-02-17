@@ -18,7 +18,6 @@ const ChangeStyle = ({ portfolioStyle, dispatch }) => {
     });
   };
 
-  console.log(`Opposite Style: ${oppositeStyle}`);
   return (
     <div>
       <button type="button" onClick={() => { toggleStyle(oppositeStyle); }}>{oppositeStyleMsg}</button>
