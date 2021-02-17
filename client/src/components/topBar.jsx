@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import classesMain from '../css/styles_main.css';
 
 const TopBar = () => {
@@ -7,9 +8,9 @@ const TopBar = () => {
     <div className={classesMain.topBarBox}>
       <h1>Portfolio App</h1>
       <div className={classesMain.navBox}>
-        <button type="button" className={classesMain.navBoxIcons}>{iconArr[0]}</button>
-        <button type="button" className={classesMain.navBoxIcons}>{iconArr[1]}</button>
-        <button type="button" className={classesMain.navBoxIcons}>{iconArr[2]}</button>
+        <button type="button" className={classesMain.navBoxIcons}>HOME</button>
+        <button type="button" className={classesMain.navBoxIcons}>PICTURES</button>
+        <button type="button" className={classesMain.navBoxIcons}>THIRD THING</button>
       </div>
     </div>
   );
