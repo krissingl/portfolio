@@ -1,18 +1,28 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import classesMain from '../css/styles_main.css';
 
-const TopBar = () => {
-  const iconArr = ['icon1', 'icon2', 'icon3'];
+const TopBar = ({ dispatch }) => {
+  const changePage = (page) => {
+    dispatch({
+      type: 'changePage',
+      payload: page,
+    });
+  };
   return (
     <div className={classesMain.topBarBox}>
       <h1>Portfolio App</h1>
       <div className={classesMain.navBox}>
-        <h5 className={classesMain.navBoxIcons}>{iconArr[0]}</h5>
-        <h5 className={classesMain.navBoxIcons}>{iconArr[1]}</h5>
-        <h5 className={classesMain.navBoxIcons}>{iconArr[2]}</h5>
+        <button type="button" className={classesMain.navBoxIcons} onClick={() => { changePage('home'); }}>HOME</button>
+        <button type="button" className={classesMain.navBoxIcons} onClick={() => { changePage('picPage'); }}>PICTURES</button>
+        <button type="button" className={classesMain.navBoxIcons} onClick={() => { changePage('home'); }}>THIRD THING</button>
       </div>
     </div>
   );
 };
 
-export default TopBar;
+const mapDispatchToProps = (dispatch) => ({
+  dispatch,
+});
+
+export default connect(mapDispatchToProps)(TopBar);
