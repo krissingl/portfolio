@@ -7,9 +7,9 @@ const TopBar = () => {
     <div className={classesMain.topBarBox}>
       <h1>Portfolio App</h1>
       <div className={classesMain.navBox}>
-        <h5 className={classesMain.navBoxIcons}>{iconArr[0]}</h5>
-        <h5 className={classesMain.navBoxIcons}>{iconArr[1]}</h5>
-        <h5 className={classesMain.navBoxIcons}>{iconArr[2]}</h5>
+        <button type="button" className={classesMain.navBoxIcons}>{iconArr[0]}</button>
+        <button type="button" className={classesMain.navBoxIcons}>{iconArr[1]}</button>
+        <button type="button" className={classesMain.navBoxIcons}>{iconArr[2]}</button>
       </div>
     </div>
   );
