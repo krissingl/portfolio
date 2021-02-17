@@ -16,4 +16,8 @@ const TopBar = () => {
   );
 };
 
-export default TopBar;
+const mapDispatchToProps = (dispatch) => ({
+  dispatch,
+});
+
+export default connect(mapDispatchToProps)(TopBar);
