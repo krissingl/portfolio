@@ -8,3 +8,7 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+.navBoxIcons {
+  margin-right: 5px;
+  margin-left: 5px;
+}
