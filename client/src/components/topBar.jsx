@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import classesMain from '../css/styles_main.css';
+// import classesMain from '../css/styles_main.css';
 
 const TopBar = ({ dispatch }) => {
   const changePage = (page) => {
