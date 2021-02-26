@@ -31,6 +31,13 @@ const Main = ({ page, portfolioStyle }) => {
       </div>
     );
   }
+  if (page === 'appsPage') {
+    currentPage = (
+      <div>
+        <AppsPage />
+      </div>
+    );
+  }
   return (
     <div className={currentClasses.main}>
       <ChangeStyle />
