@@ -2,7 +2,7 @@ import React from 'react';
 
 const AppsPage = () => (
   <div>
-    <h1>Welcome to the picture page!</h1>
+    <h1>Welcome to the applications page!</h1>
   </div>
 );
 

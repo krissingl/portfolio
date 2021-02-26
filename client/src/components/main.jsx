@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Home from './home.jsx';
 import PicturePage from './picPage.jsx';
+import AppsPage from './applicationsPage.jsx';
 import ChangeStyle from './changeStyleBtn.jsx';
 import TopBar from './topBar.jsx';
 import classes1 from '../css/styles_bidnez.css';
