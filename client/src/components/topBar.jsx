@@ -11,7 +11,7 @@ const TopBar = ({ dispatch }) => {
   };
   return (
     <div className={classesMain.topBarBox}>
-      <h1>Portfolio App</h1>
+      <h1>Krista Singleton: Portfolio</h1>
       <div className={classesMain.navBox}>
         <button type="button" className={classesMain.navBoxIcons} onClick={() => { changePage('home'); }}>HOME</button>
         <button type="button" className={classesMain.navBoxIcons} onClick={() => { changePage('appsPage'); }}>APPLICATIONS</button>
