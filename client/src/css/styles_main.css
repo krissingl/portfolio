@@ -6,6 +6,10 @@ html, body, body div, h1, h2, h3, h4, h5, h6 {
   vertical-align: baseline;
   background: transparent;
 }
+h1 {
+  align-self: center;
+  text-align: center;
+}
 .topBarBox {
   display: flex;
   flex-direction: row;
@@ -19,8 +23,4 @@ html, body, body div, h1, h2, h3, h4, h5, h6 {
 .navBoxIcons {
   margin-right: 5px;
   margin-left: 5px;
-}
-h1 {
-  align-self: center;
-  text-align: center;
 }
