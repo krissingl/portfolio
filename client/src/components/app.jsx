@@ -29,7 +29,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Main />
+      <Main backgroundGen={this.backgroundGen} backgroundImgUrl={this.state.backgroundImgUrl} />
     );
   }
 }
