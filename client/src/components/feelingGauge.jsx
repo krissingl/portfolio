@@ -1,4 +1,5 @@
 import React from 'react';
+import classesMain from '../css/styles_main.css';
 
 const FeelingGauge = () => {
   const feelings = ['Sunny', 'Rainy', 'Stormy', 'Calm', 'Restless'];
@@ -6,7 +7,7 @@ const FeelingGauge = () => {
     <option key={feeling} value={feeling}>{feeling}</option>
   ));
   return (
-    <div>
+    <div className={classesMain.feelingsBox}>
       <h5>What are you feeling?</h5>
       <div>
         <select>
