@@ -10,6 +10,10 @@ h1 {
   align-self: center;
   text-align: center;
 }
+h3 {
+  align-self: center;
+  text-align: center;
+}
 .topBarBox {
   display: flex;
   flex-direction: row;
@@ -23,4 +27,15 @@ h1 {
 .navBoxIcons {
   margin-right: 5px;
   margin-left: 5px;
+}
+.feelingsBox {
+  background: rgba(0, 0, 0, 0.56);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 1%;
+  color: aliceblue;
+  font-size: 5em;
+  align-items: center;
 }
