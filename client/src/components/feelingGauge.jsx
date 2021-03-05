@@ -1,7 +1,6 @@
 import React from 'react';
 
 const FeelingGauge = () => {
-  console.log('feelingGuage');
   const feelings = ['Sunny', 'Rainy', 'Stormy', 'Calm', 'Restless'];
   const feelingsList = feelings.map((feeling) => (
     <option key={feeling} value={feeling}>{feeling}</option>
