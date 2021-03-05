@@ -2,7 +2,7 @@ import React from 'react';
 import classesMain from '../css/styles_main.css';
 
 const FeelingGauge = () => {
-  const feelings = ['Sunny', 'Rainy', 'Stormy', 'Calm', 'Restless'];
+  const feelings = ['Sunny', 'Rainy', 'Stormy', 'Calm', 'Breezy'];
   const feelingsList = feelings.map((feeling) => (
     <option key={feeling} value={feeling}>{feeling}</option>
   ));
