@@ -19,14 +19,52 @@ const FeelingGauge = () => {
     backgroundImg = calm;
     moodyBackground = {
       backgroundImage: `url(${backgroundImg})`,
-      backgroundSize: 'cover',
+      backgroundSize: '100%',
+      backgroundRepeat: 'no-repeat',
+      width: '100%',
+      height: '730px',
+    };
+  } else if (localMood === 'Rainy') {
+    backgroundImg = calm;
+    moodyBackground = {
+      backgroundImage: `url(${backgroundImg})`,
+      backgroundSize: '100%',
+      backgroundRepeat: 'no-repeat',
+      width: '100%',
+      height: '730px',
+    };
+  } else if (localMood === 'Stormy') {
+    backgroundImg = calm;
+    moodyBackground = {
+      backgroundImage: `url(${backgroundImg})`,
+      backgroundSize: '100%',
+      backgroundRepeat: 'no-repeat',
+      width: '100%',
+      height: '730px',
+    };
+  } else if (localMood === 'Calm') {
+    backgroundImg = calm;
+    moodyBackground = {
+      backgroundImage: `url(${backgroundImg})`,
+      backgroundSize: '100%',
+      backgroundRepeat: 'no-repeat',
+      width: '100%',
+      height: '730px',
+    };
+  } else if (localMood === 'Breezy') {
+    backgroundImg = calm;
+    moodyBackground = {
+      backgroundImage: `url(${backgroundImg})`,
+      background: 'cover',
+      backgroundSize: '100%',
+      backgroundRepeat: 'no-repeat',
       width: '100%',
     };
   }
   return (
     <div style={moodyBackground}>
       <div className={classesMain.feelingsBox}>
-        <h5>What are you feeling?</h5>
+        <h5>How are you feeling??</h5>
         <div>
           <select onChange={findMood}>
             {feelingsList}
