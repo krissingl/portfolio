@@ -22,7 +22,6 @@ const FeelingGauge = () => {
       backgroundSize: '100%',
       backgroundRepeat: 'no-repeat',
       width: '100%',
-      height: '730px',
     };
   } else if (localMood === 'Rainy') {
     backgroundImg = calm;
@@ -31,7 +30,6 @@ const FeelingGauge = () => {
       backgroundSize: '100%',
       backgroundRepeat: 'no-repeat',
       width: '100%',
-      height: '730px',
     };
   } else if (localMood === 'Stormy') {
     backgroundImg = calm;
@@ -40,7 +38,6 @@ const FeelingGauge = () => {
       backgroundSize: '100%',
       backgroundRepeat: 'no-repeat',
       width: '100%',
-      height: '730px',
     };
   } else if (localMood === 'Calm') {
     backgroundImg = calm;
@@ -49,7 +46,6 @@ const FeelingGauge = () => {
       backgroundSize: '100%',
       backgroundRepeat: 'no-repeat',
       width: '100%',
-      height: '730px',
     };
   } else if (localMood === 'Breezy') {
     backgroundImg = calm;
@@ -64,7 +60,7 @@ const FeelingGauge = () => {
   return (
     <div style={moodyBackground}>
       <div className={classesMain.feelingsBox}>
-        <h5>How are you feeling??</h5>
+        <h5>What are you feeling??</h5>
         <div>
           <select onChange={findMood}>
             {feelingsList}
